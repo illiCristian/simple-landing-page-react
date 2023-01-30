@@ -1,7 +1,7 @@
 import "./App.css";
-import travel_01 from "./assets/travel-01.jpg";
-import travel_02 from "./assets/travel-02.jpg";
 import travel_03 from "./assets/travel-03.jpg";
+import travel_04 from "./assets/travel-04.jpg";
+import travel_05 from "./assets/travel-5.jpg";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Slider from "./components/Slider";
@@ -9,16 +9,17 @@ import Slider from "./components/Slider";
 function App() {
   const navbarLinks = [
     { url: "#", title: "Home" },
-    { url: "#", title: "Trips" },
-    { url: "#", title: "Rewards" },
+    { url: "#", title: "Destinations" },
+    { url: "#", title: "Travel Tips" },
+    { url: "#", title: "About" },
   ];
 
   return (
     <div className="App">
       <Navbar navbarLinks={navbarLinks} />
-      <Hero imageSrc={travel_01} />
+      <Hero imageSrc={travel_04} />
       <Slider
-        imageSrc={travel_02}
+        imageSrc={travel_05}
         title={"Be an explorer."}
         subtitle={
           "Our platform offers a wide variety of unique travel locations!"
